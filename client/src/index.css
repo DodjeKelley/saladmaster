@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  
+  /* Primary: Light Blue - 3B82F6 in HSL */
+  --primary: 217 91% 60%;
+  --primary-light: 213 97% 79%;
+  --primary-dark: 221 83% 53%;
+  --primary-foreground: 211 100% 99%;
+  
+  /* Secondary: Green - 10B981 in HSL */
+  --secondary: 160 84% 39%;
+  --secondary-light: 156 64% 67%;
+  --secondary-dark: 161 94% 30%;
+  --secondary-foreground: 0 0% 100%;
+  
+  /* Accent: Teal - 0D9488 in HSL */
+  --accent: 173 80% 32%;
+  --accent-foreground: 210 20% 98%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 217 91% 60%;
+  --radius: 0.5rem;
+  
+  /* Chart colors */
+  --chart-1: 217 91% 60%;
+  --chart-2: 160 84% 39%;
+  --chart-3: 173 80% 32%;
+  --chart-4: 221 83% 53%;
+  --chart-5: 156 64% 67%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 217 91% 60%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 160 84% 39%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 173 80% 32%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 217 91% 60%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-gray-50 text-gray-800;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  section {
+    scroll-margin-top: 80px;
+  }
+  
+  .font-heading {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .font-body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .calendly-inline-widget {
+    min-width: 320px;
+    height: 600px;
+  }
+}
