@@ -40,6 +40,7 @@ export default function Footer() {
               <li><a href="#benefits" className="text-gray-300 hover:text-white transition duration-300">Health Benefits</a></li>
               <li><a href="#recipes" className="text-gray-300 hover:text-white transition duration-300">Recipes</a></li>
               <li><a href="#videos" className="text-gray-300 hover:text-white transition duration-300">Videos</a></li>
+              <li><a href="#in-home-demo" className="text-gray-300 hover:text-white transition duration-300">In-Home Demo</a></li>
               <li><a href="#testimonials" className="text-gray-300 hover:text-white transition duration-300">Testimonials</a></li>
             </ul>
           </div>

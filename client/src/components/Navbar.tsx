@@ -65,6 +65,7 @@ export default function Navbar() {
             <li><a href="#benefits" onClick={() => handleNavClick('benefits')} className="hover:text-primary transition duration-300">Health Benefits</a></li>
             <li><a href="#recipes" onClick={() => handleNavClick('recipes')} className="hover:text-primary transition duration-300">Recipes</a></li>
             <li><a href="#videos" onClick={() => handleNavClick('videos')} className="hover:text-primary transition duration-300">Videos</a></li>
+            <li><a href="#in-home-demo" onClick={() => handleNavClick('in-home-demo')} className="hover:text-primary transition duration-300">In-Home Demo</a></li>
             <li><a href="#testimonials" onClick={() => handleNavClick('testimonials')} className="hover:text-primary transition duration-300">Testimonials</a></li>
             <li><a href="#contact" onClick={() => handleNavClick('contact')} className="hover:text-primary transition duration-300">Contact</a></li>
             <li>

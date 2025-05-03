@@ -5,6 +5,7 @@ import Benefits from "@/components/Benefits";
 import CallToAction from "@/components/CallToAction";
 import Recipes from "@/components/Recipes";
 import Videos from "@/components/Videos";
+import InHomeDemo from "@/components/InHomeDemo";
 import Testimonials from "@/components/Testimonials";
 import Schedule from "@/components/Schedule";
 import Contact from "@/components/Contact";
@@ -39,6 +40,7 @@ export default function Home() {
         <CallToAction />
         <Recipes />
         <Videos />
+        <InHomeDemo />
         <Testimonials />
         <Schedule />
         <Contact />
