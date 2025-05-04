@@ -3,12 +3,13 @@ interface TestimonialCardProps {
   name: string;
   title: string;
   initials: string;
+  imageSrc?: string;
 }
 
-function TestimonialCard({ quote, name, title, initials }: TestimonialCardProps) {
+function TestimonialCard({ quote, name, title, initials, imageSrc }: TestimonialCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 p-6">
-      <div className="flex items-center mb-4">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 p-6 border border-gray-100">
+      <div className="flex items-center mb-6">
         <div className="text-yellow-400 flex">
           {[...Array(5)].map((_, i) => (
             <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -17,15 +18,36 @@ function TestimonialCard({ quote, name, title, initials }: TestimonialCardProps)
           ))}
         </div>
       </div>
-      <blockquote className="text-gray-700 mb-4 italic">
+      
+      <svg 
+        className="text-gray-300 w-10 h-10 mb-3 opacity-20"
+        fill="currentColor" 
+        viewBox="0 0 32 32"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M10 8c-2.2 0-4 1.8-4 4v10c0 2.2 1.8 4 4 4h12c2.2 0 4-1.8 4-4v-10c0-2.2-1.8-4-4-4h-2c0-3.3-2.7-6-6-6v2c2.2 0 4 1.8 4 4h-8zm0 2h12c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-12c-1.1 0-2-.9-2-2v-10c0-1.1.9-2 2-2z"/>
+      </svg>
+      
+      <blockquote className="text-gray-700 mb-6 italic text-lg">
         "{quote}"
       </blockquote>
-      <div className="flex items-center mt-6">
-        <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-          <span className="text-gray-500 font-medium">{initials}</span>
-        </div>
+      
+      <div className="flex items-center mt-6 pt-4 border-t border-gray-100">
+        {imageSrc ? (
+          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/30 mr-4 flex-shrink-0 shadow-md">
+            <img 
+              src={imageSrc} 
+              alt={`${name}`} 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : (
+          <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0 border-2 border-primary/30">
+            <span className="text-gray-500 font-medium">{initials}</span>
+          </div>
+        )}
         <div>
-          <p className="font-heading font-medium">{name}</p>
+          <p className="font-heading font-medium text-lg">{name}</p>
           <p className="text-sm text-gray-500">{title}</p>
         </div>
       </div>
@@ -39,19 +61,22 @@ export default function Testimonials() {
       quote: "Sharon's guidance changed the way our family cooks. We've never felt better eating veggies cooked in these amazing pots!",
       name: "Maria G.",
       title: "Local customer",
-      initials: "MG"
+      initials: "MG",
+      imageSrc: "/images/maria.jpg"
     },
     {
       quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Dhong is so knowledgeable and patient!",
       name: "Roberto S.",
       title: "Client",
-      initials: "RS"
+      initials: "RS",
+      imageSrc: "/images/roberto.jpg"
     },
     {
       quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
       name: "Health Coach Attendee",
       title: "Professional",
-      initials: "HC"
+      initials: "HC",
+      imageSrc: "/images/health-coach.jpg"
     }
   ];
 
@@ -74,6 +99,7 @@ export default function Testimonials() {
               name={testimonial.name}
               title={testimonial.title}
               initials={testimonial.initials}
+              imageSrc={testimonial.imageSrc}
             />
           ))}
         </div>
