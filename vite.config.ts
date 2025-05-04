@@ -3,8 +3,18 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+// Determine the base path based on CNAME or GitHub Pages deployment
+const getBasePath = () => {
+  // When deploying to a custom domain, use root path
+  if (process.env.CNAME || process.env.CUSTOM_DOMAIN) {
+    return '/';
+  }
+  // For GitHub Pages deployment at github.io/saladmaster
+  return '/saladmaster/';
+};
+
 export default defineConfig({
-  base: '/saladmaster/',
+  base: getBasePath(),
   plugins: [
     react(),
     runtimeErrorOverlay(),

@@ -8,9 +8,17 @@ import Home from "@/pages/Home";
 import { useEffect } from "react";
 import FaviconScript from "./FaviconScript";
 
-// Explicitly set the base path for GitHub Pages
+// Determine if we're using a custom domain by checking the hostname
+const isCustomDomain = () => {
+  if (typeof window !== 'undefined') {
+    return !window.location.hostname.includes('github.io');
+  }
+  return false;
+};
+
+// Explicitly set the base path for GitHub Pages or custom domain
 const isProduction = import.meta.env.PROD;
-const base = isProduction ? '/saladmaster' : '/';
+const base = isProduction && !isCustomDomain() ? '/saladmaster' : '/';
 
 function Router() {
   // Scroll to top on route change
