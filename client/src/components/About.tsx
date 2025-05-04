@@ -3,29 +3,35 @@ export default function About() {
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
+          <div className="inline-block px-4 py-1 bg-secondary/10 rounded-full text-secondary font-medium text-sm mb-4">Meet Your Coaches</div>
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">About Sharon & Dhong</h2>
           <div className="mx-auto w-24 h-1 bg-secondary mb-6"></div>
-          <p className="max-w-3xl mx-auto text-lg text-gray-600">Partners in life and in healthy cooking, bringing the Saladmaster experience to your home.</p>
+          <p className="max-w-3xl mx-auto text-lg text-gray-600">Partners in life and in healthy cooking, bringing the Saladmaster experience to your home with passion and expertise.</p>
         </div>
         
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2">
-            <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-                src="https://images.pexels.com/photos/14089600/pexels-photo-14089600.jpeg" 
-                alt="Sharon and Dhong cooking together" 
-                className="w-full h-auto"
+                src="/images/sharon-dhong-hawaii.jpg" 
+                alt="Sharon and Dhong enjoying their time in Hawaii" 
+                className="w-full h-auto object-cover"
               />
+              <div className="bg-gradient-to-t from-black/30 to-transparent absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             </div>
+            <p className="text-sm text-gray-500 mt-2 text-center italic">Sharon and Dhong celebrating in Hawaii</p>
           </div>
           
           <div className="lg:w-1/2">
             <h3 className="font-heading font-semibold text-2xl mb-4">Our Story</h3>
             <p className="mb-4 text-gray-700">
-              Sharon and Dhong have been authorized Saladmaster distributors (Trinity4Health) since 2020, serving the Santa Clarita community and beyond. Together they bring years of experience in nutrition and home cooking, helping families prepare healthy meals with professional quality cookware.
+              Sharon and Dhong have been authorized Saladmaster distributors (Trinity4Health) since 2020, serving the Santa Clarita community and all of Southern California. Their journey began when they discovered how Saladmaster cookware revolutionized their own health and cooking habits.
+            </p>
+            <p className="mb-4 text-gray-700">
+              Together they bring years of experience in nutrition and healthy home cooking, helping families prepare nutritious meals using professional-quality cookware that preserves vitamins and minerals.
             </p>
             <p className="mb-6 text-gray-700">
-              As certified Saladmaster coaches, they conduct interactive cooking classes ("cooking shows") in your home or virtually, demonstrating how to use 316Ti stainless Saladmaster pots and pans for maximum nutrition and flavor.
+              As certified Saladmaster coaches, they conduct interactive cooking classes ("cooking shows") in your home or virtually, demonstrating how to use 316Ti surgical stainless Saladmaster pots and pans for maximum nutrition and flavor without adding oils, fats, or water.
             </p>
             
             <div className="bg-primary/10 rounded-lg p-6 mb-6">
