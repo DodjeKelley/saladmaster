@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { scrollToElement } from "@/lib/utils";
+import headerImage1 from "../assets/images/headerimage1.jpg";
+import headerImage2 from "../assets/images/headerimage2.jpg";
+import potsAndPans from "../assets/images/potsandpans.webp";
 
 export default function Hero() {
   return (
@@ -44,7 +47,7 @@ export default function Hero() {
                 {/* Image 1: Healthy meal */}
                 <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img 
-                    src="./images/healthy-meal.jpg" 
+                    src={headerImage1} 
                     alt="Healthy grilled chicken with fresh vegetable salad" 
                     className="w-full h-64 md:h-72 object-cover rounded-xl"
                   />
@@ -56,7 +59,7 @@ export default function Hero() {
                 {/* Image 2: Food preparation */}
                 <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img 
-                    src="./images/cooking-vegetables.jpg" 
+                    src={headerImage2} 
                     alt="Preparing fresh vegetables for a healthy meal" 
                     className="w-full h-64 md:h-72 object-cover rounded-xl"
                   />
@@ -69,7 +72,7 @@ export default function Hero() {
               {/* Bottom: Premium cookware image */}
               <div className="relative overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.01] transition-transform duration-300">
                 <img 
-                  src="./images/saladmaster-cookware.webp" 
+                  src={potsAndPans} 
                   alt="Premium Saladmaster stainless steel cookware set" 
                   className="w-full h-auto object-cover"
                 />

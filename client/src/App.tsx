@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { useEffect } from "react";
+import FaviconScript from "./FaviconScript";
 
 // Explicitly set the base path for GitHub Pages
 const isProduction = import.meta.env.PROD;
@@ -31,6 +32,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <FaviconScript />
         <Toaster />
         <Router />
       </TooltipProvider>

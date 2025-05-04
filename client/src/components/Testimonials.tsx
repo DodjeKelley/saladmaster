@@ -1,3 +1,7 @@
+import mariaImage from "../assets/images/Maria.jpg";
+import robertoImage from "../assets/images/Roberto.jpg";
+import healthCoachImage from "../assets/images/Health Coach Attendee.jpg";
+
 interface TestimonialCardProps {
   quote: string;
   name: string;
@@ -51,21 +55,21 @@ export default function Testimonials() {
       name: "Maria G.",
       title: "Local customer",
       initials: "MG",
-      imageSrc: "./images/maria.jpg"
+      imageSrc: mariaImage
     },
     {
       quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Alden is so knowledgeable and patient!",
       name: "Roberto S.",
       title: "Client",
       initials: "RS",
-      imageSrc: "./images/roberto.jpg"
+      imageSrc: robertoImage
     },
     {
       quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
       name: "Health Coach Attendee",
       title: "Professional",
       initials: "HC",
-      imageSrc: "./images/health-coach.jpg"
+      imageSrc: healthCoachImage
     }
   ];
 
