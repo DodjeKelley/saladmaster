@@ -1,19 +1,14 @@
-import mariaImg from "@/assets/testimonials/maria.svg";
-import robertoImg from "@/assets/testimonials/roberto.svg";
-import healthCoachImg from "@/assets/testimonials/health-coach.svg";
-
 interface TestimonialCardProps {
   quote: string;
   name: string;
   title: string;
   initials: string;
-  imageSrc?: string;
 }
 
-function TestimonialCard({ quote, name, title, initials, imageSrc }: TestimonialCardProps) {
+function TestimonialCard({ quote, name, title, initials }: TestimonialCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 p-8 border border-gray-100 flex flex-col h-full">
-      <div className="flex items-center mb-4 justify-between">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 p-6">
+      <div className="flex items-center mb-4">
         <div className="text-yellow-400 flex">
           {[...Array(5)].map((_, i) => (
             <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -21,34 +16,16 @@ function TestimonialCard({ quote, name, title, initials, imageSrc }: Testimonial
             </svg>
           ))}
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-200" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-        </svg>
       </div>
-      <blockquote className="text-gray-700 mb-6 italic flex-grow">
+      <blockquote className="text-gray-700 mb-4 italic">
         "{quote}"
       </blockquote>
       <div className="flex items-center mt-6">
-        {imageSrc ? (
-          <div className="relative">
-            <img 
-              src={imageSrc} 
-              alt={`${name} profile`} 
-              className="w-16 h-16 rounded-full object-cover mr-4 flex-shrink-0 border-2 border-primary/20 p-1 bg-blue-50"
-            />
-            <div className="absolute -bottom-1 -right-1 bg-green-100 rounded-full p-1 border border-green-200">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-          </div>
-        ) : (
-          <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mr-4 flex-shrink-0 border-2 border-primary/20">
-            <span className="text-primary font-medium text-lg">{initials}</span>
-          </div>
-        )}
+        <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+          <span className="text-gray-500 font-medium">{initials}</span>
+        </div>
         <div>
-          <p className="font-heading font-medium text-lg">{name}</p>
+          <p className="font-heading font-medium">{name}</p>
           <p className="text-sm text-gray-500">{title}</p>
         </div>
       </div>
@@ -62,22 +39,19 @@ export default function Testimonials() {
       quote: "Sharon's guidance changed the way our family cooks. We've never felt better eating veggies cooked in these amazing pots!",
       name: "Maria G.",
       title: "Local customer",
-      initials: "MG",
-      imageSrc: mariaImg
+      initials: "MG"
     },
     {
       quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Dhong is so knowledgeable and patient!",
       name: "Roberto S.",
       title: "Client",
-      initials: "RS",
-      imageSrc: robertoImg
+      initials: "RS"
     },
     {
       quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
       name: "Health Coach Attendee",
       title: "Professional",
-      initials: "HC",
-      imageSrc: healthCoachImg
+      initials: "HC"
     }
   ];
 
@@ -100,7 +74,6 @@ export default function Testimonials() {
               name={testimonial.name}
               title={testimonial.title}
               initials={testimonial.initials}
-              imageSrc={testimonial.imageSrc}
             />
           ))}
         </div>
