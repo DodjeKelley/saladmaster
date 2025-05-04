@@ -27,6 +27,9 @@ export default function Home() {
           element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
+    } else {
+      // Scroll to top when no hash is present 
+      window.scrollTo(0, 0);
     }
   }, [location]);
 
