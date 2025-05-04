@@ -7,11 +7,14 @@ export default function Hero() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+            <div className="inline-block px-4 py-1 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
+              Southern California's Trusted Saladmaster Coaches
+            </div>
             <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
               Cooking for <span className="text-primary">Health</span> & <span className="text-secondary">Happiness</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-700">
-              Meet Sharon and Dhong, Certified Saladmaster Cooking Coaches bringing healthier cooking methods to Santa Clarita and beyond.
+              Meet Sharon and Dhong, your Certified Saladmaster Cooking Coaches bringing healthier cooking methods to Santa Clarita and all of Southern California. Experience the difference of waterless, oil-free cooking.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -32,14 +35,18 @@ export default function Hero() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <div className="relative rounded-xl overflow-hidden shadow-xl">
+            <div className="relative rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-                src="https://images.pexels.com/photos/30609688/pexels-photo-30609688.jpeg" 
-                alt="Happy couple cooking together in a modern kitchen" 
-                className="w-full h-auto object-cover rounded-xl"
+                src="/images/hero-couple.webp" 
+                alt="Sharon and Dhong - Certified Saladmaster Cooking Coaches" 
+                className="w-full h-[450px] md:h-[500px] object-cover rounded-xl"
+                style={{ objectPosition: 'center' }}
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                <p className="text-white text-lg font-medium">Certified Saladmaster Cooking Coaches since 2020</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent py-8 px-6">
+                <div className="flex flex-col gap-1">
+                  <p className="text-white text-lg font-medium">Sharon & Dhong</p>
+                  <p className="text-white/90 font-medium">Certified Saladmaster Cooking Coaches since 2020</p>
+                </div>
               </div>
             </div>
           </div>
