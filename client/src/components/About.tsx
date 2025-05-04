@@ -2,7 +2,7 @@ import ownersPhoto from "../assets/images/ownersphoto.jpg";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 bg-white">
+    <section id="about" className="pt-5 pb-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="inline-block px-4 py-1 bg-secondary/10 rounded-full text-secondary font-medium text-sm mb-4">Meet Your Coaches</div>
