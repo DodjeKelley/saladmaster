@@ -3,9 +3,10 @@ interface TestimonialCardProps {
   name: string;
   title: string;
   initials: string;
+  imageSrc?: string;
 }
 
-function TestimonialCard({ quote, name, title, initials }: TestimonialCardProps) {
+function TestimonialCard({ quote, name, title, initials, imageSrc }: TestimonialCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 p-6">
       <div className="flex items-center mb-4">
@@ -21,9 +22,19 @@ function TestimonialCard({ quote, name, title, initials }: TestimonialCardProps)
         "{quote}"
       </blockquote>
       <div className="flex items-center mt-6">
-        <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-          <span className="text-gray-500 font-medium">{initials}</span>
-        </div>
+        {imageSrc ? (
+          <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+            <img 
+              src={imageSrc} 
+              alt={`${name}'s portrait`} 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ) : (
+          <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+            <span className="text-gray-500 font-medium">{initials}</span>
+          </div>
+        )}
         <div>
           <p className="font-heading font-medium">{name}</p>
           <p className="text-sm text-gray-500">{title}</p>
@@ -39,19 +50,22 @@ export default function Testimonials() {
       quote: "Sharon's guidance changed the way our family cooks. We've never felt better eating veggies cooked in these amazing pots!",
       name: "Maria G.",
       title: "Local customer",
-      initials: "MG"
+      initials: "MG",
+      imageSrc: "/images/maria.jpg"
     },
     {
       quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Dhong is so knowledgeable and patient!",
       name: "Roberto S.",
       title: "Client",
-      initials: "RS"
+      initials: "RS",
+      imageSrc: "/images/roberto.jpg"
     },
     {
       quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
       name: "Health Coach Attendee",
       title: "Professional",
-      initials: "HC"
+      initials: "HC",
+      imageSrc: "/images/health-coach.jpg"
     }
   ];
 
@@ -74,6 +88,7 @@ export default function Testimonials() {
               name={testimonial.name}
               title={testimonial.title}
               initials={testimonial.initials}
+              imageSrc={testimonial.imageSrc}
             />
           ))}
         </div>
