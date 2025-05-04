@@ -7,8 +7,9 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { useEffect } from "react";
 
-// Get the base path from the environment or use a default
-const base = import.meta.env.BASE_URL || '/';
+// Explicitly set the base path for GitHub Pages
+const isProduction = import.meta.env.PROD;
+const base = isProduction ? '/saladmaster' : '/';
 
 function Router() {
   // Scroll to top on route change
