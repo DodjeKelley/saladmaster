@@ -35,34 +35,42 @@ export default function Hero() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Image 1: Healthy meal */}
-              <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
+            <div className="space-y-4">
+              {/* Top: Premium cookware image */}
+              <div className="overflow-hidden rounded-xl shadow-xl transform hover:scale-[1.01] transition-transform duration-300">
                 <img 
-                  src="/images/healthy-meal.jpg" 
-                  alt="Healthy grilled chicken with fresh vegetable salad" 
-                  className="w-full h-64 md:h-80 object-cover rounded-xl"
+                  src="/images/saladmaster-cookware.webp" 
+                  alt="Premium Saladmaster stainless steel cookware set" 
+                  className="w-full h-auto object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
-                  <p className="text-white font-medium text-sm">Delicious food that nourishes your body and soul</p>
-                </div>
               </div>
               
-              {/* Image 2: Food preparation */}
-              <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
-                <img 
-                  src="/images/cooking-vegetables.jpg" 
-                  alt="Preparing fresh vegetables for a healthy meal" 
-                  className="w-full h-64 md:h-80 object-cover rounded-xl"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
-                  <p className="text-white font-medium text-sm">Transform fresh ingredients into nourishing meals</p>
+              {/* Bottom: Food images side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Image 1: Healthy meal */}
+                <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
+                  <img 
+                    src="/images/healthy-meal.jpg" 
+                    alt="Healthy grilled chicken with fresh vegetable salad" 
+                    className="w-full h-64 md:h-72 object-cover rounded-xl"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
+                    <p className="text-white font-medium text-sm">Healthy meals that nourish both body and soul</p>
+                  </div>
+                </div>
+                
+                {/* Image 2: Food preparation */}
+                <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
+                  <img 
+                    src="/images/cooking-vegetables.jpg" 
+                    alt="Preparing fresh vegetables for a healthy meal" 
+                    className="w-full h-64 md:h-72 object-cover rounded-xl"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
+                    <p className="text-white font-medium text-sm">Fresh ingredients for maximum nutrients and flavor</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="mt-4 bg-white/90 p-3 rounded-lg shadow-md text-center">
-              <p className="text-primary font-medium">Experience premium cookware that preserves nutrients and enhances flavors</p>
             </div>
           </div>
         </div>
