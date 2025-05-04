@@ -13,7 +13,7 @@ export default function About() {
           <div className="lg:w-1/2">
             <div className="rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-                src="/images/sharon-dhong-hawaii.jpg" 
+                src="./images/sharon-dhong-hawaii.jpg" 
                 alt="Sharon and Alden enjoying their time in Hawaii" 
                 className="w-full h-auto object-cover"
               />

@@ -51,21 +51,21 @@ export default function Testimonials() {
       name: "Maria G.",
       title: "Local customer",
       initials: "MG",
-      imageSrc: "/images/maria.jpg"
+      imageSrc: "./images/maria.jpg"
     },
     {
       quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Alden is so knowledgeable and patient!",
       name: "Roberto S.",
       title: "Client",
       initials: "RS",
-      imageSrc: "/images/roberto.jpg"
+      imageSrc: "./images/roberto.jpg"
     },
     {
       quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
       name: "Health Coach Attendee",
       title: "Professional",
       initials: "HC",
-      imageSrc: "/images/health-coach.jpg"
+      imageSrc: "./images/health-coach.jpg"
     }
   ];
 
