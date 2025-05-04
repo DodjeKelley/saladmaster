@@ -1,6 +1,6 @@
 import mariaImage from "../assets/images/Maria.jpg";
 import robertoImage from "../assets/images/Roberto.jpg";
-import healthCoachImage from "../assets/images/Health Coach Attendee.jpg";
+import healthCoachImage from "../assets/images/HealthCoachAttendee.jpg";
 
 interface TestimonialCardProps {
   quote: string;
