@@ -5,24 +5,27 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import FaviconScript from "./FaviconScript";
 
-// Determine if we're using a custom domain by checking the hostname
-const isCustomDomain = () => {
-  if (typeof window !== 'undefined') {
-    return !window.location.hostname.includes('github.io');
-  }
-  return false;
-};
-
-// Explicitly set the base path for GitHub Pages or custom domain
-const isProduction = import.meta.env.PROD;
-const base = isProduction && !isCustomDomain() ? '/saladmaster' : '/';
-
 function Router() {
-  // Scroll to top on route change
+  const [base, setBase] = useState('/');
+  
   useEffect(() => {
+    // Determine the base path based on the hostname
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const useSubpath = isGitHubPages && !window.location.hostname.includes('socalsaladmaster');
+    
+    // Set the appropriate base path
+    if (useSubpath) {
+      setBase('/saladmaster');
+      console.log('Using GitHub Pages subpath: /saladmaster');
+    } else {
+      setBase('/');
+      console.log('Using root path for custom domain');
+    }
+    
+    // Scroll to top on route change
     window.scrollTo(0, 0);
   }, []);
 

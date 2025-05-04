@@ -13,6 +13,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     
+    <!-- Script to handle asset paths for GitHub Pages or custom domain -->
+    <script type="text/javascript">
+      (function() {
+        // Check if we're on GitHub Pages
+        var isGitHubPages = window.location.hostname.includes('github.io');
+        var isCustomDomain = !isGitHubPages;
+        
+        // Set the base path for assets based on domain
+        window.__BASE_PATH__ = isCustomDomain ? '/' : '/saladmaster/';
+        
+        // Check in case we're using a custom subdomain on github.io
+        if(window.location.hostname.includes('socalsaladmaster')) {
+          window.__BASE_PATH__ = '/';
+        }
+        
+        console.log('Base path set to:', window.__BASE_PATH__);
+      })();
+    </script>
+    
     <!-- GitHub Pages SPA routing script -->
     <script type="text/javascript">
       // Handle redirects from the 404.html page

@@ -2,14 +2,21 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+import fs from 'fs';
 
 // Determine the base path based on CNAME or GitHub Pages deployment
 const getBasePath = () => {
-  // When deploying to a custom domain, use root path
-  if (process.env.CNAME || process.env.CUSTOM_DOMAIN) {
+  // Check if CNAME file exists (indicating custom domain)
+  const cnamePath = path.resolve(import.meta.dirname, "client/public/CNAME");
+  const hasCnameFile = fs.existsSync(cnamePath);
+  
+  if (hasCnameFile) {
+    console.log("CNAME file detected, using root path for assets");
     return '/';
   }
+  
   // For GitHub Pages deployment at github.io/saladmaster
+  console.log("No CNAME file detected, using /saladmaster/ path for assets");
   return '/saladmaster/';
 };
 

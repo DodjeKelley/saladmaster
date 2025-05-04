@@ -1,32 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>SoCal Saladmaster</title>
-  <script type="text/javascript">
-    // GitHub Pages 404 redirect for SPA
-    // This script handles redirecting from a 404 page to the index page
-    // while preserving the original URL
-    
-    // We're running on GitHub Pages which serves /saladmaster/ as the base
-    var segmentCount = 1;
-    var baseUrl = '/saladmaster/';
-    
-    var l = window.location;
-    var cleanPath = l.pathname.replace(baseUrl, '');
-    
-    // Redirect to the index page with a special query parameter
-    var redirectUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + 
-                     baseUrl + '?p=' + cleanPath + 
-                     (l.search ? '&' + l.search.substring(1) : '') + 
-                     l.hash;
-    
-    console.log('404 redirect to: ' + redirectUrl);
-    window.location.replace(redirectUrl);
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    (function() {
+      // Determine if we're on GitHub Pages or custom domain
+      var isGitHubPages = window.location.hostname.includes('github.io');
+      var isCustomDomain = !isGitHubPages || window.location.hostname.includes('socalsaladmaster');
+      
+      // Set the base path based on hosting environment
+      var basePath = isCustomDomain ? '/' : '/saladmaster/';
+      
+      // Get the current path excluding the base path
+      var fullPath = window.location.pathname;
+      var pathToForward = fullPath;
+      
+      // If on GitHub Pages with /saladmaster/ base path, adjust the path
+      if (!isCustomDomain && fullPath.indexOf('/saladmaster/') === 0) {
+        pathToForward = fullPath.slice('/saladmaster/'.length);
+      }
+      
+      // Add the path to the redirect URL
+      var redirectUrl = basePath;
+      if (pathToForward && pathToForward !== '/404.html') {
+        // Store the path in the query parameter
+        redirectUrl = basePath + '?p=' + encodeURIComponent(pathToForward);
+      }
+      
+      // Add any existing query parameters and hash
+      var queryParams = window.location.search;
+      if (queryParams && queryParams.length > 0 && queryParams !== '?p=' + encodeURIComponent(pathToForward)) {
+        redirectUrl += (redirectUrl.indexOf('?') === -1 ? '?' : '&') + queryParams.slice(1);
+      }
+      
+      if (window.location.hash) {
+        redirectUrl += window.location.hash;
+      }
+      
+      // Log and redirect
+      console.log('404 redirect: forwarding to', redirectUrl);
+      window.location.replace(redirectUrl);
+    })();
   </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+    h1 {
+      color: #4CAF50;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <p>If you are not redirected automatically, please <a href="/saladmaster/">click here</a>.</p>
+  <div class="container">
+    <h1>Redirecting...</h1>
+    <p>If you are not automatically redirected, <a href="/">click here</a> to go to the homepage.</p>
+  </div>
 </body>
 </html> 
