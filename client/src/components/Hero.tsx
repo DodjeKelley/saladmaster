@@ -8,13 +8,13 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
             <div className="inline-block px-4 py-1 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-              Southern California's Trusted Saladmaster Coaches
+              Premium Cookware for Healthier Living
             </div>
             <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
               Cooking for <span className="text-primary">Health</span> & <span className="text-secondary">Happiness</span>
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-700">
-              Meet Sharon and Dhong, your Certified Saladmaster Cooking Coaches bringing healthier cooking methods to Santa Clarita and all of Southern California. Experience the difference of waterless, oil-free cooking.
+              Discover the transformative power of nutrition-based cooking that preserves vitamins and minerals while enhancing flavor. Embrace a lifestyle where healthy eating becomes a delicious daily practice, not a sacrifice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
@@ -35,19 +35,34 @@ export default function Hero() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-300">
-              <img 
-                src="/images/hero-couple.webp" 
-                alt="Sharon and Dhong - Certified Saladmaster Cooking Coaches" 
-                className="w-full h-[450px] md:h-[500px] object-cover rounded-xl"
-                style={{ objectPosition: 'center' }}
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent py-8 px-6">
-                <div className="flex flex-col gap-1">
-                  <p className="text-white text-lg font-medium">Sharon & Dhong</p>
-                  <p className="text-white/90 font-medium">Certified Saladmaster Cooking Coaches since 2020</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Image 1: Healthy meal */}
+              <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
+                <img 
+                  src="/images/healthy-meal.jpg" 
+                  alt="Healthy grilled chicken with fresh vegetable salad" 
+                  className="w-full h-64 md:h-80 object-cover rounded-xl"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
+                  <p className="text-white font-medium text-sm">Delicious food that nourishes your body and soul</p>
                 </div>
               </div>
+              
+              {/* Image 2: Food preparation */}
+              <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
+                <img 
+                  src="/images/cooking-vegetables.jpg" 
+                  alt="Preparing fresh vegetables for a healthy meal" 
+                  className="w-full h-64 md:h-80 object-cover rounded-xl"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
+                  <p className="text-white font-medium text-sm">Transform fresh ingredients into nourishing meals</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-4 bg-white/90 p-3 rounded-lg shadow-md text-center">
+              <p className="text-primary font-medium">Experience premium cookware that preserves nutrients and enhances flavors</p>
             </div>
           </div>
         </div>
