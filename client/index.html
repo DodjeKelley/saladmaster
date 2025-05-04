@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>SoCal Saladmaster - Sharon Paje & Alden Onoya</title>
     <meta name="description" content="Sharon Paje & Alden Onoya are certified Saladmaster cooking coaches in Orange County, California. Schedule a free cooking demonstration and learn about the health benefits of Saladmaster cookware.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#4CAF50">
     <link rel="icon" href="./images/saladmaster-cookware.webp" type="image/webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,10 +42,48 @@
         }
       })();
     </script>
+    <style>
+      .noscript-message {
+        font-family: 'Montserrat', sans-serif;
+        max-width: 600px;
+        margin: 100px auto;
+        padding: 20px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .noscript-message h1 {
+        color: #4CAF50;
+      }
+      .noscript-message p {
+        margin: 20px 0;
+        line-height: 1.6;
+      }
+      .noscript-message a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
+    <noscript>
+      <div class="noscript-message">
+        <h1>JavaScript Required</h1>
+        <p>To use the SoCal Saladmaster Health Coach website, please enable JavaScript in your browser settings.</p>
+        <p>For information on Saladmaster products or to schedule a demo, please contact us at:</p>
+        <p><strong>(714) 504-3014</strong> or <strong>sharon@trinity4health.com</strong></p>
+        <a href="tel:7145043014">Call Now</a>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="./src/main.tsx"></script>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>
