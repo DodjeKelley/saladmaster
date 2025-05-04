@@ -215,7 +215,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-heading font-semibold text-lg mb-1">Location</h4>
                   <p className="text-gray-700 mb-1">Orange County, CA</p>
-                  <p className="text-sm text-gray-500">Serving Orange County and surrounding areas</p>
+                  <p className="text-sm text-gray-500">Serving Southern California and surrounding areas</p>
                 </div>
               </div>
               
