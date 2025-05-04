@@ -6,11 +6,11 @@ export default function Hero() {
     <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0">
+          <div className="lg:w-1/2 lg:pl-8 lg:pr-16 mb-10 lg:mb-0 mx-auto max-w-3xl">
             <div className="inline-block px-4 py-1 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
               Premium Cookware for Healthier Living
             </div>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+            <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-5xl mb-6 leading-tight">
               Cooking for <span className="text-primary">Health</span> & <span className="text-secondary">Happiness</span>
             </h1>
             <p className="text-lg mb-4 text-gray-700">

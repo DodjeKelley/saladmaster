@@ -18,7 +18,7 @@ export default function InHomeDemo() {
             <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary">
               <h3 className="font-heading font-semibold text-2xl mb-4">Personalized In-Home Demonstrations</h3>
               <p className="text-gray-600 mb-4">
-                Sharon and Dhong, your Certified Saladmaster Cooking Coaches, will travel to any home in Southern California 
+                Sharon and Alden, your Certified Saladmaster Cooking Coaches, will travel to any home in Southern California 
                 to provide a personalized cooking demonstration with Saladmaster's premium cookware.
               </p>
               <p className="text-gray-600 mb-4">

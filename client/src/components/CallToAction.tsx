@@ -7,7 +7,7 @@ export default function CallToAction() {
       <div className="container mx-auto px-4 text-center">
         <h3 className="font-heading font-bold text-2xl md:text-3xl mb-6">Ready to transform your cooking experience?</h3>
         <p className="text-white/90 text-lg mb-8 max-w-3xl mx-auto">
-          Schedule a free cooking demonstration with Sharon and Dhong and discover how Saladmaster cookware can help you prepare healthier, more nutritious meals for your family.
+          Schedule a free cooking demonstration with Sharon and Alden and discover how Saladmaster cookware can help you prepare healthier, more nutritious meals for your family.
         </p>
         <Button 
           onClick={() => scrollToElement('schedule')}

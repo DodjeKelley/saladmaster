@@ -70,7 +70,7 @@ export default function Contact() {
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">Contact Us</h2>
           <div className="mx-auto w-24 h-1 bg-secondary mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
-            Have questions or need more information? Get in touch with Sharon and Dhong.
+            Have questions or need more information? Get in touch with Sharon and Alden.
           </p>
         </div>
         
@@ -214,8 +214,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-lg mb-1">Location</h4>
-                  <p className="text-gray-700 mb-1">Santa Clarita, CA</p>
-                  <p className="text-sm text-gray-500">Serving Santa Clarita and surrounding areas</p>
+                  <p className="text-gray-700 mb-1">Orange County, CA</p>
+                  <p className="text-sm text-gray-500">Serving Orange County and surrounding areas</p>
                 </div>
               </div>
               
@@ -238,7 +238,7 @@ export default function Contact() {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center hover:bg-blue-600 transition duration-300"
-                    aria-label="Dhong's Facebook"
+                    aria-label="Alden's Facebook"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>

@@ -75,8 +75,8 @@ export default function Schedule() {
                       This is a demonstration scheduling section
                     </p>
                     <p className="text-gray-600 text-sm ml-7">
-                      When deployed, this will be integrated with Sharon and Dhong's actual Calendly account
-                      for automatic scheduling.
+                      {/* Calendly integration comment */}
+                      {/* When deployed, this will be integrated with Sharon and Alden's actual Calendly account */}
                     </p>
                   </div>
                   
@@ -139,7 +139,7 @@ export default function Schedule() {
                   <div className="p-5 border rounded-md">
                     <h4 className="font-medium mb-2">What happens next?</h4>
                     <ol className="space-y-2 text-gray-600 text-sm list-decimal ml-5">
-                      <li>Sharon or Dhong will call you to confirm your appointment</li>
+                      <li>Sharon or Alden will call you to confirm your appointment</li>
                       <li>They'll ask about your kitchen setup and any dietary preferences</li>
                       <li>On the day of your demo, they'll arrive with all necessary equipment</li>
                       <li>Enjoy a 1-2 hour cooking demonstration in your home</li>

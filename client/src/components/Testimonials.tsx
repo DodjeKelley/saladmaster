@@ -54,7 +54,7 @@ export default function Testimonials() {
       imageSrc: "/images/maria.jpg"
     },
     {
-      quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Dhong is so knowledgeable and patient!",
+      quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Alden is so knowledgeable and patient!",
       name: "Roberto S.",
       title: "Client",
       initials: "RS",

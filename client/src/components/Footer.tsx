@@ -65,7 +65,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-gray-300">Santa Clarita, CA and surrounding areas</span>
+                <span className="text-gray-300">Orange County, CA and surrounding areas</span>
               </li>
             </ul>
           </div>
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} SoCal Saladmaster. All rights reserved. Sharon Paje & Dhong Onoya - Certified Saladmaster Cooking Coaches.</p>
+          <p>© {new Date().getFullYear()} SoCal Saladmaster. All rights reserved. Sharon Paje & Alden Onoya - Certified Saladmaster Cooking Coaches.</p>
           <p className="mt-2">Website and content for demonstration purposes only. Not an official Saladmaster website.</p>
         </div>
       </div>
