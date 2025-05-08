@@ -27,19 +27,19 @@ export default function About() {
           <div className="lg:w-1/2">
             <h3 className="font-heading font-semibold text-2xl mb-4">Our Story</h3>
             <p className="mb-4 text-gray-700">
-              Sharon and Alden have been authorized Saladmaster distributors (Trinity4Health) since 2020, serving the Orange County community and all of Southern California. Their journey began when they discovered how Saladmaster cookware revolutionized their own health and cooking habits.
+              Sharon and Alden have been authorized Saladmaster distributors since 2020, serving the Orange County community and all of Southern California. Their journey began when they discovered how Saladmaster cookware revolutionized their own health and cooking habits.
             </p>
             <p className="mb-4 text-gray-700">
               Together they bring years of experience in nutrition and healthy home cooking, helping families prepare nutritious meals using professional-quality cookware that preserves vitamins and minerals.
             </p>
             <p className="mb-6 text-gray-700">
-              As certified Saladmaster coaches, they conduct interactive cooking classes ("cooking shows") in your home or virtually, demonstrating how to use 316Ti surgical stainless Saladmaster pots and pans for maximum nutrition and flavor without adding oils, fats, or water.
+              As certified Saladmaster coaches, they conduct interactive cooking classes in your home or virtually, demonstrating how to use 316Ti surgical stainless steel Saladmaster pots and pans for maximum nutrition and flavor without adding oils or fats while maximixing food hydration.
             </p>
             
             <div className="bg-primary/10 rounded-lg p-6 mb-6">
               <h4 className="font-heading font-semibold text-xl mb-2 text-primary">Our Mission</h4>
               <p className="text-gray-700">
-                To empower families with the knowledge and tools to prepare healthier, more nutritious meals using waterless cooking methods that preserve vitamins and minerals.
+                To empower families with the knowledge and tools to prepare healthier, more nutritious meals using new cooking methods that preserve more vitamins and minerals.
               </p>
             </div>
             

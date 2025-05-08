@@ -36,7 +36,7 @@ export default function Benefits() {
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">Health Benefits of Saladmaster Cookware</h2>
           <div className="mx-auto w-24 h-1 bg-secondary mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
-            Scientifically proven advantages of cooking with Saladmaster's 316Ti stainless steel waterless cookware.
+            Scientifically proven advantages of cooking with Saladmaster's 316Ti stainless steel ultra resistant cookware.
           </p>
         </div>
         
@@ -72,7 +72,7 @@ export default function Benefits() {
               </svg>
             }
             title="Improved Blood Health"
-            description="Clinical trials showed that waterless stainless cooking significantly increased blood vitamin C and β-carotene levels, and even reduced oxidized LDL ('bad' cholesterol)."
+            description="Clinical trials showed that high resistant stainless steel cooking significantly increased blood vitamin C and β-carotene levels, and even reduced oxidized LDL ('bad' cholesterol)."
             source="PMC Clinical Study"
             colorClass="bg-accent/20"
           />

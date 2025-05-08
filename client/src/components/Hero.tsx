@@ -69,7 +69,7 @@ export default function Hero() {
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent py-4 px-4">
-                  <p className="text-white font-medium text-sm">Life Long Cookware that can be passed from one Generation to the next</p>
+                  <p className="text-white font-medium text-sm">Life Long Cookware that can be passed from one Generation to the next!</p>
                 </div>
               </div>
             </div>

@@ -1,6 +1,9 @@
 import mariaImage from "../assets/images/Maria.jpg";
 import robertoImage from "../assets/images/Roberto.jpg";
 import healthCoachImage from "../assets/images/HealthCoachAttendee.jpg";
+import drYoungImage from "../assets/images/Dr. Robert Young.jpg";
+import drBarnardImage from "../assets/images/Dr Neal Barnard.jpg";
+import drRogersImage from "../assets/images/Dr. Dan Rogers.png";
 
 interface TestimonialCardProps {
   quote: string;
@@ -51,11 +54,25 @@ function TestimonialCard({ quote, name, title, initials, imageSrc }: Testimonial
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Sharon's guidance changed the way our family cooks. We've never felt better eating veggies cooked in these amazing pots!",
-      name: "Maria G.",
-      title: "Local customer",
-      initials: "MG",
-      imageSrc: mariaImage
+      quote: "Whole-food, plant-based meals are the foundation of good health. Saladmaster makes it easy to prepare these meals deliciously and efficiently.",
+      name: "Dr. Neal Barnard",
+      title: "Physician, Author, Clinical Researcher",
+      initials: "NB",
+      imageSrc: drBarnardImage
+    },
+    {
+      quote: "Saladmaster's cooking technology preserves vital nutrients and supports a healthy, alkaline lifestyle. I recommend it to anyone serious about their health.",
+      name: "Dr. Robert Young",
+      title: "Medical Researcher & Nutritionist",
+      initials: "RY",
+      imageSrc: drYoungImage
+    },
+    {
+      quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
+      name: "Health Coach Attendee",
+      title: "Professional",
+      initials: "HC",
+      imageSrc: healthCoachImage
     },
     {
       quote: "After just a few weeks of using Saladmaster, my blood pressure and cholesterol improved. Alden is so knowledgeable and patient!",
@@ -65,14 +82,21 @@ export default function Testimonials() {
       imageSrc: robertoImage
     },
     {
-      quote: "I love not needing oil to make our food taste great. Sharon makes healthy cooking feel easy and delicious.",
-      name: "Health Coach Attendee",
-      title: "Professional",
-      initials: "HC",
-      imageSrc: healthCoachImage
+      quote: "As a doctor, I see the difference nutrition makes. Saladmaster helps my patients and my family eat better every day.",
+      name: "Dr. Dan Rogers",
+      title: "M.D., Family Medicine",
+      initials: "DR",
+      imageSrc: drRogersImage
+    },
+    {
+      quote: "Sharon's guidance changed the way our family cooks. We've never felt better eating veggies cooked in these amazing pots!",
+      name: "Maria G.",
+      title: "Local customer",
+      initials: "MG",
+      imageSrc: mariaImage
     }
   ];
-
+  
   return (
     <section id="testimonials" className="py-16 bg-white">
       <div className="container mx-auto px-4">
