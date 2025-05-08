@@ -7,6 +7,7 @@ import Recipes from "@/components/Recipes";
 import Videos from "@/components/Videos";
 import InHomeDemo from "@/components/InHomeDemo";
 import Testimonials from "@/components/Testimonials";
+import CommunityPartners from "@/components/CommunityPartners";
 import Schedule from "@/components/Schedule";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -46,6 +47,7 @@ export default function Home() {
         <InHomeDemo />
         <Testimonials />
         <Schedule />
+        <CommunityPartners />
         <Contact />
       </main>
       <Footer />

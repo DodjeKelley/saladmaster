@@ -41,12 +41,10 @@ export default function Hero() {
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent py-4 px-4">
-                  <p className="text-white font-medium text-sm">Life Long Cookware that can be passed from one Generation to the next!</p>
+                  <p className="text-white font-medium text-sm">Life Long Cookware that can be passed from one Generation to the next</p>
                 </div>
               </div>
-              {/* Top: Food images side by side */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {/* Image 1: Healthy meal */}
                 <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img 
                     src={headerImage1} 
@@ -56,9 +54,7 @@ export default function Hero() {
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-4 px-4">
                     <p className="text-white font-medium text-sm">Healthy meals that nourish both body and soul</p>
                   </div>
-                </div>
-                
-                {/* Image 2: Food preparation */}
+                </div>                
                 <div className="relative rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-transform duration-300">
                   <img 
                     src={headerImage2} 
@@ -69,9 +65,7 @@ export default function Hero() {
                     <p className="text-white font-medium text-sm">Fresh ingredients for maximum nutrients and flavor</p>
                   </div>
                 </div>
-              </div>
-              
-              {/* Bottom: Premium cookware image */}
+              </div>              
             </div>
           </div>
         </div>

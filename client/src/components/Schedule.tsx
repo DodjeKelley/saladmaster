@@ -8,7 +8,7 @@ export default function Schedule() {
   };
 
   return (
-    <section id="schedule" className="py-16 bg-gray-50">
+    <section id="schedule" className="pt-12 pb-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">Schedule Your Free Demo</h2>

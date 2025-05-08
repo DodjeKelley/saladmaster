@@ -3,7 +3,7 @@ import { Link } from "wouter";
 
 export default function InHomeDemo() {
   return (
-    <section id="in-home-demo" className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+    <section id="in-home-demo" className="pt-12 pb-16 bg-gradient-to-br from-green-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">We Come To You!</h2>
